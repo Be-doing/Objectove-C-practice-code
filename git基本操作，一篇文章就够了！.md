@@ -29,6 +29,45 @@
 
 # 2. git配置命令
 
+> 查询配置信息
+
+1. 列出当前配置：`git config --list`;
+2. 列出repository配置：`git config --local --list`;
+3. 列出全局配置：`git config --global --list`;
+4. 列出系统配置：`git config --system --list`;
+
+> 第一次使用git，配置用户信息
+
+1. 配置用户名：`git config --global user.name "your name"`;
+2. 配置用户邮箱：`git config --global user.email "youremail@github.com"`;
+
+> 其他配置
+
+1. 配置解决冲突时使用哪种差异分析工具，比如要使用vimdiff：`git config --global merge.tool vimdiff`;
+2. 配置git命令输出为彩色的：`git config --global color.ui auto`;
+3. 配置git使用的文本编辑器：`git config --global core.editor vi`;
+
+# 3. 工作区上的操作命令
+
+> 新建仓库
+
+1. 将工作区中的项目文件使用git进行管理，即创建一个新的本地仓库：`git init`；
+2. 从远程git仓库复制项目：`git clone `，如：git clone git://github.com/wasd/example.git;克隆项目时如果想定义新的项目名，可以在clone命令后指定新的项目名：`git clone git://github.com/wasd/example.git mygit`；
+
+> 提交
+
+1. 提交工作区所有文件到暂存区：`git add .`
+2. 提交工作区中指定文件到暂存区：`git add   ...`;
+3. 提交工作区中某个文件夹中所有文件到暂存区：`git add [dir]`;
+
+
+作者：你听___
+链接：https://juejin.im/post/5ae072906fb9a07a9e4ce596
+来源：掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。作者：你听___
+链接：https://juejin.im/post/5ae072906fb9a07a9e4ce596
+来源：掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 作者：你听___
 链接：https://juejin.im/post/5ae072906fb9a07a9e4ce596
